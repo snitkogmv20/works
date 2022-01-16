@@ -1,0 +1,20 @@
+# works-- Table: public.usr
+
+-- DROP TABLE IF EXISTS public.usr;
+
+CREATE TABLE IF NOT EXISTS public.usr
+(
+    id bigint NOT NULL DEFAULT nextval('usr_id_seq'::regclass),
+    e_mail character varying(64) COLLATE pg_catalog."default" NOT NULL,
+    first_name character varying(64) COLLATE pg_catalog."default" NOT NULL,
+    last_name character varying(64) COLLATE pg_catalog."default" NOT NULL,
+    middle_name character varying(64) COLLATE pg_catalog."default" NOT NULL,
+    phone character varying(20) COLLATE pg_catalog."default",
+    birth_date timestamp(6) without time zone,
+    CONSTRAINT email_unique UNIQUE (e_mail)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.usr
+    OWNER to postgres;
