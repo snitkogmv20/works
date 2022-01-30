@@ -24,5 +24,5 @@ insert into usr (first_name, middle_name, last_name, email) values
 ('Петр', 'Петрович', 'Гриша', '1211petrov@my.example.com'),
 ('Иван', 'Иванович', 'Лера', '17811ivanov@my.example.com'),
 ('Петр', 'Петрович', 'Макс', '111petrov@my.example.com'),
-('Иван', 'Иванович', 'Иван', '111ivanov@my.example.com'),
+('Иван', 'Иванович', 'Иванаф', '111ivanov@my.example.com'),
 ('Иван', 'Петрович', 'Сидор', '111sidorov@my.example.com');
