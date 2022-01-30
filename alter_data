@@ -18,3 +18,4 @@ TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.usr
     OWNER to postgres;
+d
