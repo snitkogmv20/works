@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS public.usr
     middle_name character varying(64) COLLATE pg_catalog."default" NOT NULL,
     phone character varying(20) COLLATE pg_catalog."default",
     birth_date timestamp(6) without time zone,
-    CONSTRAINT email_unique UNIQUE (e_mail)
+    CONSTRAINT email_unique UNIQUE (e_mail
 )
 
 TABLESPACE pg_default;
